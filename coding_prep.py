@@ -75,7 +75,7 @@
 
 # print(check_pal(101))
 
-
+#
 # number = [12, 15, 13, 2, 4, 3]
 # divide = [2, 5]
 # addition_number = []
@@ -88,24 +88,43 @@
 #         if number[i] % divide[j] == 0:
 #             print(f"{number[i]} is divisible of {divide[j]}")
 # print(added_number)
+#
+# #
+# number = [2, 5, 4, 3, 6, 3]
+# added_number = [5, 5]
+# addedn = []
+# minusn = []
+# expon = []
+# for i in range(len(number)):
+#     added = 0
+#     minus = 0
+#     exp = number[i]
+#     for j in range(len(added_number)):
+#         added += added_number[j]
+#         minus -= added_number[j]
+#         exp **= added_number[j]
+#     addedn.append(number[i] + added)
+#     minusn.append(number[i] + minus)
+#     expon.append(exp)
+# print(addedn)
+# print(minusn)
+# print("expo", expon)
 
+# binary number into decimal
+# binary_number = "10011"
+# decimal_number = 0
+# # for digit in binary_number:
+# #     decimal_number = decimal_number * 2 + int(digit)
+# # print(decimal_number)
+#
+# # decimal_number = int(binary_number, 2)
+# # print(decimal_number)
 
-number = [2, 5, 4, 3, 6, 3]
-added_number = [5, 5]
-addedn = []
-minusn = []
-expon = []
-for i in range(len(number)):
-    added = 0
-    minus = 0
-    exp = number[i]
-    for j in range(len(added_number)):
-        added += added_number[j]
-        minus -= added_number[j]
-        exp **= added_number[j]
-    addedn.append(number[i] + added)
-    minusn.append(number[i] + minus)
-    expon.append(exp)
-print(addedn)
-print(minusn)
-print("expo", expon)
+######################################################################
+
+# 1. How to convert a list into a string?
+my_list = ['Hello', 'world', '!']
+new_str = ''
+for char in my_list:
+    new_str += char
+print(new_str)

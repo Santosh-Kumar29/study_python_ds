@@ -33,11 +33,11 @@
 # student = {"name": "John", "age": 20, "grade": "A"}
 # student["name"] = "kumar"
 # print(len(student["name"]))
-
-table = 4
-for i in range(1, 11):
-    data = table * i
-    print(f" {4} * {i} = {data}")
+#
+# table = 4
+# for i in range(1, 11):
+#     data = table * i
+#     print(f" {4} * {i} = {data}")
 
 
 # add the number with sending multiple argumatns
@@ -49,3 +49,12 @@ for i in range(1, 11):
 #         print(number[i])
 #         max_num = number[i]
 # print(max_num)
+
+# list slicing
+string = "myworld"
+reverse = ""
+for char in string:
+    # print(reverse)
+    print(">>", char)
+    reverse = char + reverse
+print(reverse)

@@ -1,8 +1,7 @@
-n = 9
-first = 0
-second = 1
-series = [first, second]
-for i in range(0, n - 2):
-    num = series[i] + series[i + 1]
-    series.append(num)
-print(series)
+n = 10
+number = [0, 1]
+for j in range(0, n - 2):
+    data = number[j] + number[j + 1]
+    print(data)
+    number.append(data)
+print(number)
