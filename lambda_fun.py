@@ -10,6 +10,6 @@
 #
 # print(boolean_char("false"))
 
-
-addition = lambda x, y:x + y
-print(addition(3, 5))
+#
+# addition = lambda x, y:x + y
+# print(addition(3, 5))

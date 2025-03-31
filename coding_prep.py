@@ -7,7 +7,7 @@
 
 # 2. Python Program to count occurrence of a given characters in string.(count the number provided)
 # str = "aadamdbasjha"
-# occ = "d"
+# occ = "a"
 # count = 0
 # for i in range(len(str)):
 #     if str[i] == occ:
@@ -22,6 +22,7 @@
 # else:
 #     print("not anagram")
 
+# print((1, 2, 3,1))
 
 # 4. String Palindrome program in python
 # char1 = "abc12"
@@ -71,8 +72,8 @@
 # while number > 0:
 #     remainder = number % 10
 #     reversed_num = ()
-
-
+#
+#
 # print(check_pal(101))
 
 
@@ -153,13 +154,13 @@
 #  15. Write a program in Python to find given number is perfect or not?
 # -> perfect number is those number which having some positive integer which is equal to its positive division
 
-# a = 7
-# div = []
+# a = 6
+# # div = []
 # added_num = 0
 # for num in range(1, a):
 #     if a % num == 0:
-#         div.append(num)
-#         print(div)
+#         # div.append(num)
+#         # print(div)
 #         added_num += num
 # if added_num == a:
 #     print("perfect number")
@@ -257,8 +258,115 @@
 # print(number * (number * number))
 
 # 28. Python Program to calculate the square root of a given number.
-# number = "144"
+# number = 144
+# # if number > 0:
+# guess_number = number / 2
+# while True:
+#     new_guess = (guess_number + number / guess_number) / 2
+#     if int(new_guess) == int(guess_number):
+#         guess = new_guess
+#         break
+#     guess_number = new_guess
+# print(guess)
 
+# 29. Python program to calculate LCM of given two numbers.
+# numer1 = 6
+# number2 = 15
+# max_num = max(numer1, number2)
+# while True:
+#     if max_num % numer1 == 0 and max_num % number2 == 0:
+#         lcm = max_num
+#         break
+#     max_num += 1
+# print(lcm)
+
+# 30. Python Program to find GCD or HCF of two numbers.
+# number1 = 60
+# number2 = 90
+# num = min(number1, number2)
+# ns = []
+# for i in range(2, num):
+#     if number1 % i == 0 and number2 % i == 0:
+#         ns.append(i)
+#     i += 1
+# new_num = ns[1]
+# for new in ns:
+#     if new > new_num:
+#         new_num = new
+# print(new_num)
+
+# 31. Python Program to find GCD of two numbers using recursion.
+# def get_gcd(num1, num2):
+#     num = min(num1, num2)
+#     gcd = 1
+#     for i in range(2, num):
+#         if num1 % i == 0 and num2 % i == 0:
+#             # print(">>", gcd)
+#             gcd = i
+#     return gcd
+#
+#
+# print(get_gcd(60, 90))
+
+# 32. Python Program to Convert Decimal Number into Binary.
+
+# number = 0.75
+# binary = ""
+# #
+# # if number == 0:
+# #     binary = "0"
+#
+# while number != 0:
+#     number *= 2
+#     if number >= 1:
+#         binary += "1"
+#         number -= 1
+#     else:
+#         binary += "0"
+# print(binary)
+
+# 33. Python Program to convert Decimal number to Octal number.
+
+# number = 52
+#
+# octal = ""
+#
+# while number > 0:
+#     print(number)
+#     octal = str(number % 8) + octal
+#     number = number // 8
+# print(octal)
+
+# 34. Python Program to check the given year is a leap year or not.
+# year = 2001
+# if (year % 400 == 0) and (year % 100 == 0):
+#     print(f"{year} is a leap year")
+# elif (year % 4 == 0) and (year % 100 != 0):
+#     print(f"{year} is a leap year")
+# else:
+#     print(f"{year} is not a leap year")
+
+# 35. Python Program to convert Celsius to Fahrenheit.
+# celsius = 32
+# farehinite = (celsius * 9 / 5) + 32
+# print(farehinite)
+
+# 36. Python Program to convert Fahrenheit to Celsius.
+# farehinite = 77.7
+# celsius = (farehinite - 32) * 5 / 9
+# print(celsius)
+
+
+#  37. Python program to calculate Simple Interest with explanation.
+
+# principle = 100
+# rate  =32
+# time = 10
+# si = (principle * rate * time) / 100
+# print(si)
+
+# =========================================================================================================================
+# Some Extra Practice
 
 # number = [12, 15, 13, 2, 4, 3]
 # divide = [2, 5]
@@ -272,6 +380,10 @@
 #         if number[i] % divide[j] == 0:
 #             print(f"{number[i]} is divisible of {divide[j]}")
 # print(added_number)
+
+
+# ****************************************************
+
 
 # reverse the number without inbuilt function and reverse slicing
 # start = 0
@@ -322,7 +434,7 @@
 # # decimal_number = int(binary_number, 2)
 # # print(decimal_number)
 
-######################################################################
+######################################################################################################################
 
 # 1. How to convert a list into a string?
 # my_list = ['Hello', 'world', '!']
@@ -397,3 +509,122 @@
 # y = 15
 # data = lambda x, y: x + y
 # print(data(x, y))
+
+# from functools import reduce
+data = [1, 2, 3, 4, 5, 6, 7]
+
+# # print(data[-2::-1])
+# sum_num = reduce(lambda x, y: x + y, data)
+# print(sum_num)
+# data = [1, 2, 3, 4, 5, 6, 7]
+
+# print(data[2:5])
+# sum_num = lambda lst: sum(lst)
+# result = sum_num(data)
+# print(result)
+# num = 0
+# for i in data:
+#     num +=i
+# print(num)
+# sum_num = lambda x: sum(x)
+# result = sum_num(data)
+# print(result)
+
+# reverse num using for loop
+# data = [1, 2, 3, 4, 5, 6, 7]
+# reverse = []
+# for i in range(len(data) - 1, -1, -1):
+#     reverse.append(data[i])
+# print(reverse)
+
+
+# print (1
+# 12
+# 123
+# 1234
+# 12345
+# 1234
+# 123
+# 12
+# 1)
+#
+# for i in range(1, 6):
+#     for j in range(1, i+1):
+#         print(j, end='')
+#     print()
+# for i in range(4, 0, -1):
+#     for j in range(1, i +1):
+#         print(j, end='')
+#     print()
+# table = 12
+# for i in range(1, 11):
+#     print(f"{table} * {i} = {table * i}")
+
+# I = [1, 2, 3, 4, 5]
+# data = [x & 1 for x in I]
+# print(data)
+
+## Print *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+
+# for i in range(1, 6):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+# for i in range(5, 0, -1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+#
+# def add(*kwargs):
+#     number = list(kwargs)
+#     added_num = 0
+#     for i in number:
+#         added_num += i
+#     print(added_num)
+#
+#
+# print(add(1, 2, 4, 3, 2, 4))
+
+
+# class First:
+#
+#     def func(self):
+#         print("aaa")
+#
+#
+# class Second(First):
+#     def func(self):
+#         print("bbb")
+#         super().func()
+#
+#
+# class Third(First):
+#     def func(self):
+#         super().func()
+#
+#
+# class Four(Second, Third):
+#     def fun2(self):
+#         print("okk")
+#
+# object = Four()
+# object.func()
+#
+#
+# x = 1/0
+# print(x)
+
+# s = 'spam, eggs, & ham'
+# f = s.find('Eggs')
+# print(">???>", f)
+
+
